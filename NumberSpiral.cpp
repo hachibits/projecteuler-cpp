@@ -1,16 +1,17 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
-    int ans = 1;
-    int cursor = 1;
-    for (int i = 2; i < 1001; i += 2) {
-        for (int j = 0; j < 4; j++) {
-            cursor += i;
-            ans += cursor;
-        }
+  int ans = 1;
+  int cursor = 1;
+  for (int i = 2; i < 1001; i += 2) {
+    for (int j = 0; j < 4; j++) {
+      cursor += i;
+      ans += cursor;
     }
+  }
 
-    cout << ans;
-    return 0;
+  cout << ans;
+  return 0;
 }
